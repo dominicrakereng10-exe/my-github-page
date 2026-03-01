@@ -46,6 +46,12 @@
         margin-bottom: 20px;
         text-shadow: 2px 2px 10px #000;
     }
+    /* Make all H1 headings black */
+h1 {
+    color: darkslategrey;             /* Black text */
+    font-family: 'Arial', sans-serif; /* Optional: clean font */
+    margin-bottom: 15px;      /* Space below the heading */
+}
 
     header p {
         font-size: 1.2rem;
