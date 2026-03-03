@@ -14,49 +14,53 @@
 
     body {
         font-family: 'Arial', sans-serif;
-        color: white;
+        color: yellow;
         min-height: 100vh;
-        background-image: url('image/rd1.jpg'); 
+        background-image: url('image/bg3.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         position: relative;
-    }
 
-    
-    body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.6); 
-        z-index: -1;
     }
+.hero{position: relative;
+z-index: 2;
+}
+.hero h1{color: yellow;}
+    
+body ::before{content: ;
+position: fixed;
+inset: 0;
+background:rgba(0,0,0,0.55) ;
+z-index: 1;}
+.hero{position: relative;
+z-index: 2;}
+
+
 
     header {
         text-align: center;
-        padding: 100px 20px 50px 20px;
+        padding-top: 180px;
+        padding-bottom: 100px;
+        
+
     }
 
-    header h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 10px #000;
-    }
-    /* Make all H1 headings black */
-h1 {
-    color: darkslategrey;             /* Black text */
-    font-family: 'Arial', sans-serif; /* Optional: clean font */
-    margin-bottom: 15px;      /* Space below the heading */
+    
+
+    
+
+h1,h2{
+    color: yellow;
+    !important
 }
 
-    header p {
-        font-size: 1.2rem;
-        text-shadow: 1px 1px 5px #000;
+    p{
+        color: yellow;
+        text-align: center;
     }
+    
 
     .btn {
         display: inline-block;
@@ -81,6 +85,7 @@ h1 {
     section {
         padding: 80px 20px;
         text-align: center;
+        color: yellow;
     }
 
     section h2 {
@@ -95,6 +100,7 @@ h1 {
         margin: 0 auto;
         line-height: 1.6;
         text-shadow: 1px 1px 5px #000;
+        color: yellow;
     }
 
     footer {
@@ -134,20 +140,48 @@ h1 {
     margin: 0;
     color: white;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+body {
+    padding-top: 80px;
+}
+
+
 nav a {
-  color: rgb(255, 0, 0);       
+  color: yellow;       
   text-decoration: none;  
 }
 
 nav a:hover {
   color: white;        
 }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+}
 
 .category {
-  color: rgb(255, 0, 0);
+  color:yellow;
   text-decoration: none;
 }
 
 .category p {
-  color: rgb(255, 0, 0);
-font-size:bold;}
+  color: yellow;
+  font-weight: bold;
+}
+
+.slogan{color: yellow;}
